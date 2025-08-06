@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <XenotypeDef>
+    <defName>RMLNDSCanonXeno_Goliath</defName>
+    <label>goliath</label>
+	  <description>Mutants originating from the deathworld Pandora, goliaths emerged under mysterious circumstances possibly relating to archotech and/or megacorporate activity on the planet. They are endowed with massive, brutish bodies sometimes described as "meat-walls" or "bullet-sponges", but their minds are dimmer than most. In a way, quite literally: their heads are so horrendously malformed their skulls are in danger of popping right out at any moment, if not for the fact most goliaths wear compressing helmets. This becomes a particularly deadly combination when their nocireceptive adrenal glands are considered, with the pain of their skull being ripped from its shackles being enough to send a goliath into a berserk rage.\n\nThis tendency, alongside their mutant appearance, means most developed societies do not accept them. As such, goliaths are most often found as members of bandit clans or pirate bands, commanding respect from their lessers but rarely rising to proper leadership.</description>
+	  <descriptionShort>Mutants originating from the deathworld Pandora. Endowed with massive bodies and malformed heads, these hulking brutes become stronger - and scarier - with pain, which can be a boon... or a curse, if someone aims for the helmet.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/Goliath</iconPath>
+	<inheritable>true</inheritable>
+    <genes>
+		<li>RMLNDSCanonXeno_StrongMeleeSlowMeleeSpeed</li>
+		<li>RMLNDSCanonXeno_PainStrengthGene</li>
+		<li>Unstoppable</li>
+		<li>StrongStomach</li>
+		<li>RMLNDSCanonXeno_HelmetDependency</li>
+		<li>RMLNDSCanonXeno_NoPainShock</li>
+		<li>AptitudePoor_Intellectual</li>
+		<li>AptitudeTerrible_Crafting</li>
+		<li>MoveSpeed_Slow</li>
+		<li>Sleepy</li>
+		<li>Beauty_VeryUgly</li>
+		<li MayRequire="vanillaracesexpanded.pigskin">VRE_Gluttonous</li>
+		<li MayRequire="vanillaracesexpanded.hussar">VREH_Toughness</li>
+		<li MayRequire ="det.boglegs">DV_FatStorage</li>
+		<li>Body_Fat</li>
+	</genes>
+  </XenotypeDef>
+  <XenotypeDef>
+    <defName>RMLNDSCanonXeno_Tink</defName>
+    <label>tink</label>
+	  <description>Mutants originating from the deathworld Pandora, tinks emerged under mysterious circumstances possibly relating to archotech and/or megacorporate activity on the planet. At first glance, some may mistake tinks for genies with dwarfism. This could not be further from the truth: although they have disproportionately large heads and small bodies, they are surprisingly durable in combat. Tinks possess a "machine instinct" so powerful there are stories of them creating awe-inspiring sentry emplacements with nothing but piles of scrap and boredom. And boredom is the feeling for the ever-capricious and infamously emotionally volatile tink.\n\nThese tendencies, alongside their mutant appearance, means most developed societies do not accept them. As such, tinks are most often found as members of bandit clans or pirate bands, forming their engineering corps. Despite this importance, most clans will not treat tinks with respect either. But at least they give them something to do, and for most that's enough.</description>
+	  <descriptionShort>Mutants originating from the deathworld Pandora. Small, volatile and dangerously hyperactive, but skilled with machines and deceptively resilient.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/Tink</iconPath>
+	<inheritable>true</inheritable>
+    <genes>
+		<li>MeleeDamage_Weak</li>
+    </genes>
+  </XenotypeDef>
+
+</Defs>

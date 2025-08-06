@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+  <RulePackDef>
+    <defName>NamerPersonGoliath</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[firstName] '[nicknameGoliath]'</li>
+        <li>r_name->[firstName]</li>
+
+        <li>maybeHyphen->-</li>
+
+        <li>firstName->[SylG][SylG]</li>
+        <li>firstName->[SylG][nameEnd]</li>
+        <li>firstName->[SylG][maybeHyphen][nameEnd]</li>
+        <li>firstName->[SylG][maybeHyphen][SylG]</li>
+
+        <li>nameEnd->head</li>
+        <li>nameEnd->face</li>
+        <li>nameEnd->toe</li>
+        <li>nameEnd->toes</li>
+        <li>nameEnd->arm</li>
+        <li>nameEnd->arms</li>
+        <li>nameEnd->hand</li>
+        <li>nameEnd->hands</li>
+        <li>nameEnd->foot</li>
+        <li>nameEnd->feet</li>
+        <li>nameEnd->blood</li>
+        <li>nameEnd->bone</li>
+        <li>nameEnd->bones</li>
+        <li>nameEnd->fat</li>
+        <li>nameEnd->belly</li>
+        <li>nameEnd->tummy</li>
+        <li>nameEnd->tum</li>
+        <li>nameEnd->ear</li>
+        <li>nameEnd->ears</li>
+        <li>nameEnd->eye</li>
+        <li>nameEnd->eyes</li>
+        <li>nameEnd->finger</li>
+        <li>nameEnd->fingers</li>
+        <li>nameEnd->marrow</li>
+        <li>nameEnd->skull</li>
+
+      </rulesStrings>
+      <rulesFiles>
+        <li>SylG->WordParts/Syllables_Goliath</li>
+        <li>nicknameGoliath->Names/Nick_Unisex_Goliath</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+<RulePackDef>
+    <defName>NamerPersonTinkFemale</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[firstName] '[nicknameTinkFemale]' [lastName]</li>
+        <li>r_name->[firstName] [lastName]</li>
+        <li>firstName->[fSylT][firstNameEnd]</li>
+        <li>lastName->[lSylT][lastNameEnd]</li>
+
+        <li>firstNameEnd->ble</li>
+        <li>firstNameEnd->dle</li>
+        <li>firstNameEnd->le</li>
+        <li>firstNameEnd->bley</li>
+        <li>firstNameEnd->dley</li>
+        <li>firstNameEnd->ley</li>
+        <li>firstNameEnd->dion</li>
+        <li>firstNameEnd->kion</li>
+        <li>firstNameEnd->ion</li>
+        <li>firstNameEnd->on</li>
+		<li>firstNameEnd->one</li>
+        <li>firstNameEnd->ney</li>
+        <li>firstNameEnd->dney</li>
+        <li>firstNameEnd->noy</li>
+        <li>firstNameEnd->dnoy</li>
+
+        <li>lastNameEnd->blast</li>
+        <li>lastNameEnd->build</li>
+        <li>lastNameEnd->gnash</li>
+        <li>lastNameEnd->rattle</li>
+        <li>lastNameEnd->rob</li>
+        <li>lastNameEnd->rustle</li>
+        <li>lastNameEnd->scrabble</li>
+        <li>lastNameEnd->scratch</li>
+        <li>lastNameEnd->scrap</li>
+        <li>lastNameEnd->stutter</li>
+        <li>lastNameEnd->cog</li>
+        <li>lastNameEnd->gear</li>
+        <li>lastNameEnd->wrench</li>
+        <li>lastNameEnd->steel</li>
+        <li>lastNameEnd->brass</li>
+        <li>lastNameEnd->lead</li>
+        <li>lastNameEnd->chrome</li>
+        <li>lastNameEnd->er</li>
+		<li>lastNameEnd->ums</li>
+		<li>lastNameEnd->ems</li>
+
+      </rulesStrings>
+      <rulesFiles>
+        <li>fSylT->WordParts/Syllables_TinkFirstName</li>
+        <li>nicknameTinkFemale->Words/Nicknames_TinkFemale</li>
+        <li>lSylT->WordParts/Syllables_TinkLastName</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+</Defs>

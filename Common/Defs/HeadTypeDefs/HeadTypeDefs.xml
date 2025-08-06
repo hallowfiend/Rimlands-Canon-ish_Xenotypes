@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<HeadTypeDef ParentName="AverageBase">
+	<defName>RMLNDS_Malformed</defName>
+	<graphicPath>Things/Pawn/Humanlike/Heads/None_Malformed</graphicPath>
+	<randomChosen>false</randomChosen>
+	<gender>None</gender>
+	<requiredGenes>
+		<li>RMLNDSCanonXeno_HelmetDependency</li>
+	</requiredGenes>
+	<eyeOffsetEastWest>(0.15, 0, 0.175)</eyeOffsetEastWest>
+	</HeadTypeDef>
+</Defs>

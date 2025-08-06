@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <GeneDef Name="RMLNDS_AbstractDiet" Abstract="True">
+    <exclusionTags>
+      <li>BS_Diet</li>
+      <li>Diet</li>
+	  <li>RMLNDS_AbstractDiet</li>
+    </exclusionTags>
+    <displayCategory>Miscellaneous</displayCategory>
+    <biostatCpx>1</biostatCpx>
+  </GeneDef>
+		<GeneDef ParentName="GeneJawBase">
+		<defName>RMLNDSCanonXeno_HelmetDependency</defName>
+		<geneClass>RMLNDS_CanonishXenotypes.Gene_MalformedHead</geneClass>
+		<label>malformed head</label>
+		<description>Carriers of this gene grow highly malformed heads, too small to contain their skull. Starting at the age of 13, they need to wear a helmet that pushes their skull back in at all times, or experience mind-shattering pain.</description>
+		<iconPath>UI/Icons/Genes/MalformedHead</iconPath>
+            <forcedHeadTypes>
+                <li>RMLNDS_Malformed</li>
+            </forcedHeadTypes>
+		<displayCategory>Miscellaneous</displayCategory>
+        <beardTagFilter>
+            <whitelist>true</whitelist>
+                <tags>
+                    <li>NoBeard</li>
+                </tags>
+        </beardTagFilter>
+        <hairTagFilter>
+            <whitelist>true</whitelist>
+                <tags>
+                    <li>Bald</li>
+                </tags>
+        </hairTagFilter>
+		<biostatCpx>2</biostatCpx>
+		<biostatMet>3</biostatMet>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>gol</symbol>
+				</li>
+				<li>
+					<symbol>skull</symbol>
+				</li>
+				<li>
+					<symbol>malform</symbol>
+				</li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li>
+					<symbol>headed</symbol>
+				</li>
+			</suffixSymbols>
+		</symbolPack>
+		<customEffectDescriptions>
+			<li>If carrier is over the age of 13, they will experience ridiculous amounts of pain if their entire head isn't covered.</li>
+		</customEffectDescriptions>
+		<minAgeActive>13</minAgeActive>
+	</GeneDef>
+	<GeneDef>
+		<defName>RMLNDSCanonXeno_NoPainShock</defName>
+		<label>unyielding</label>
+		<description>Carriers of this gene have altered nociception pathways which percieve the same amount of painful stimulus as baseliners, but in a different way. Even if in mind-shattering pain, they will not go into pain shock.</description>
+		<iconPath>UI/Icons/Genes/Unyielding</iconPath>
+		<customEffectDescriptions>
+			<li>Will never go into pain shock.</li>
+		</customEffectDescriptions>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>noci</symbol>
+				</li>
+			</prefixSymbols>
+		</symbolPack>
+		<biostatCpx>2</biostatCpx>
+		<biostatMet>-2</biostatMet>
+	</GeneDef>
+	<GeneDef>
+		<defName>RMLNDSCanonXeno_StrongMeleeSlowMeleeSpeed</defName>
+		<label>mighty hitter</label>
+		<description>Carriers of this gene have muscular hyperplasia, leading to musculature of absurd power, but also size. Their melee strikes will be slow, yet powerful.</description>
+		<iconPath>UI/Icons/Genes/SluggishHitter</iconPath>
+		<statOffsets>
+			<VEF_MeleeAttackSpeedFactor>2.0</VEF_MeleeAttackSpeedFactor>
+			<MeleeWeapon_DamageMultiplier>1.5</MeleeWeapon_DamageMultiplier>
+		</statOffsets>
+		<displayCategory>Violence</displayCategory>
+		<biostatCpx>2</biostatCpx>
+		<biostatMet>0</biostatMet>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>burly</symbol>
+				</li>
+				<li>
+					<symbol>slow</symbol>
+				</li>
+				<li>
+					<symbol>sluggish</symbol>
+				</li>
+				<li>
+					<symbol>slug</symbol>
+				</li>
+				<li>
+					<symbol>steady</symbol>
+				</li>
+				<li>
+					<symbol>mighty</symbol>
+				</li>
+			</prefixSymbols>
+		</symbolPack>
+	</GeneDef>
+	<GeneDef>
+		<defName>RMLNDSCanonXeno_PainStrengthGene</defName>
+		<label>painstrength</label>
+		<description>Carriers of this gene have noci-receptive and overproductive adrenal glands, allowing their strength to increase proportionately to their pain.</description>
+		<iconPath>UI/Icons/Genes/PainStrength</iconPath>
+		<displayCategory>Violence</displayCategory>
+		<geneClass>RMLNDS_CanonishXenotypes.Gene_PainStrength</geneClass>
+		<customEffectDescriptions>
+			<li>Carrier's damage taken decreases and melee damage increases as their pain increases, up to 50% and 200% respectively.</li>
+			<li>At high levels of pain, also increases movement speed.</li>
+		</customEffectDescriptions>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>pain</symbol>
+				</li>
+				<li>
+					<symbol>strong</symbol>
+				</li>
+				<li>
+					<symbol>adrenal</symbol>
+				</li>
+				<li>
+					<symbol>nor</symbol>
+				</li>
+				<li>
+					<symbol>rage</symbol>
+				</li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li>
+					<symbol>strong</symbol>
+				</li>
+				<li>
+					<symbol>line</symbol>
+				</li>
+			</suffixSymbols>
+		</symbolPack>
+		<biostatCpx>3</biostatCpx>
+		<biostatMet>-3</biostatMet>
+	</GeneDef>
+	<GeneDef ParentName="RMLNDS_AbstractDiet">
+		<defName>RMLNDS_ObligateCarnivore</defName>
+		<label>obligate carnivore</label>
+		<description>Carriers of this gene have dysfunctional enzymes and digestive structures. They will only gain nutrition from meat.</description>
+		<iconPath>UI/Icons/Genes/ObligateCarnivore</iconPath>
+		<customEffectDescriptions>
+			<li>Carrier will eat only meat and meals with meat. They won't eat vegetarian meals, even if forced.</li>
+		</customEffectDescriptions>
+		<biostatMet>2</biostatMet>
+		<modExtensions>
+			<li Class="BigAndSmall.PawnExtension">
+				<pawnDiet>BS_Carnivore</pawnDiet>
+			</li>
+		</modExtensions>
+	</GeneDef>
+	<GeneDef>
+		<defName>RMLNDS_TraitlessCannibal</defName>
+		<label>undiscerning</label>
+		<description>Carriers of this gene have no disgust response to human meat and leather. They will not gain any thoughts from eating human meat or wearing human leather.</description>
+		<iconPath>UI/Icons/Genes/TraitlessCannibal</iconPath>
+		<customEffectDescriptions>
+			<li>Disables "ate human meat" and "wearing human leather" thoughts, including ideoligion-based ones.</li>
+		</customEffectDescriptions>
+		<biostatMet>-1</biostatMet>
+		<modExtensions>
+			<li Class="VEF.Genes.GeneExtension">
+				<defsTreatedAsHumanMeat>
+					<li>null</li>
+				</defsTreatedAsHumanMeat>
+				<defsTreatedAsHumanLeather>
+					<li>null</li>
+			</defsTreatedAsHumanLeather>
+			</li>
+		</modExtensions>
+		<suppressedTraits>
+			<li>
+				<def>Cannibal</def>
+			</li>
+		</suppressedTraits>
+	</GeneDef>
+</Defs>
