@@ -7,7 +7,7 @@
     <ProjectGuid>{D7D21B4A-1DA7-41D8-B202-C58CA8FA62AA}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>RMLNNDS-CanonishXenotypes</RootNamespace>
+    <RootNamespace>RMLNDS-CanonishXenotypes</RootNamespace>
     <AssemblyName>RMLNDS-CanonishXenotypes</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -16,7 +16,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>none</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\Common\Assemblies\</OutputPath>
+    <OutputPath>..\1.6\Assemblies\</OutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <Prefer32Bit>false</Prefer32Bit>
@@ -40,9 +40,9 @@
       <Private>False</Private>
     </Reference>
     <None Include="..\About\**" />
-    <None Include="..\Common\Defs\**" />
-    <None Include="..\Common\Languages\**" />
-    <None Include="..\Common\Patches\**" />
+    <None Include="..\1.6\Defs\**" />
+    <None Include="..\1.6\Languages\**" />
+    <None Include="..\Source\Patches\**" />
     <Reference Include="VEF">
       <HintPath>..\..\..\..\..\workshop\content\294100\2023507013\1.6\Assemblies\VEF.dll</HintPath>
     </Reference>
