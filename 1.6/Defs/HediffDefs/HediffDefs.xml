@@ -13,11 +13,11 @@
 		<label>painstrength</label>
 		<description>A measure of how much this pawn's pain-receptive adrenal glands are producing.</description>
 		<hediffClass>RMLNDS_CanonishXenotypes.Hediff_PainStrength</hediffClass>
+		<visible>false</visible>
 		<stages>
 			<li>
 				<label>PLACEHOLDER - REPORT ON GITHUB IF YOU SEE THIS</label>
 				<minSeverity>1.0</minSeverity>
-				<Visible>false</Visible>
 			</li>
 			<li>
 				<label>fuming</label>
@@ -26,6 +26,7 @@
 					<MeleeWeapon_DamageMultiplier>1.1</MeleeWeapon_DamageMultiplier>
 					<IncomingDamageFactor>0.99</IncomingDamageFactor>
 				</statOffsets>
+				<becomeVisible>true</becomeVisible>
 			</li>
 			<li>
 				<label>smouldering</label>

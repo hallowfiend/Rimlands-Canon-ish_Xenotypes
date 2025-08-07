@@ -59,15 +59,18 @@
 	<GeneDef>
 		<defName>RMLNDSCanonXeno_NoPainShock</defName>
 		<label>unyielding</label>
-		<description>Carriers of this gene have altered nociception pathways which percieve the same amount of painful stimulus as baseliners, but in a different way. Even if in mind-shattering pain, they will not go into pain shock.</description>
+		<description>Carriers of this gene have altered nociception pathways which percieve the same amount of painful stimulus as baseliners, but in a different way that even at its worst is not enough to overwhelm them.</description>
 		<iconPath>UI/Icons/Genes/Unyielding</iconPath>
 		<customEffectDescriptions>
-			<li>Will never go into pain shock.</li>
+			<li>Will never go into pain shock. Can still be downed by other means.</li>
 		</customEffectDescriptions>
 		<symbolPack>
 			<prefixSymbols>
 				<li>
 					<symbol>noci</symbol>
+				</li>
+				<li>
+					<symbol>unyield</symbol>
 				</li>
 			</prefixSymbols>
 		</symbolPack>
@@ -80,7 +83,7 @@
 		<description>Carriers of this gene have muscular hyperplasia, leading to musculature of absurd power, but also size. Their melee strikes will be slow, yet powerful.</description>
 		<iconPath>UI/Icons/Genes/SluggishHitter</iconPath>
 		<statOffsets>
-			<VEF_MeleeAttackSpeedFactor>2.0</VEF_MeleeAttackSpeedFactor>
+			<VEF_MeleeAttackSpeedFactor>0.5</VEF_MeleeAttackSpeedFactor>
 			<MeleeWeapon_DamageMultiplier>1.5</MeleeWeapon_DamageMultiplier>
 		</statOffsets>
 		<displayCategory>Violence</displayCategory>
