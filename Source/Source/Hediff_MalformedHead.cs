@@ -11,14 +11,15 @@ namespace RMLNDS_CanonishXenotypes
         public override bool Visible => false;
         public bool IsLethal => false;
         public bool CachedHat;
-        public bool NotifyApparelChanged(Apparel wornApparel)
+        public void NotifyApparelChanged(Apparel wornApparel)
         {
-            return CachedHat = pawn.apparel.BodyPartGroupIsCovered(BodyPartGroupDefOf.FullHead);
+            CachedHat = pawn.apparel.BodyPartGroupIsCovered(BodyPartGroupDefOf.FullHead)
+            return;
         }
         public override float PainOffset =>
         (
                 // Check if pawn doesn't exist or is dead or is wearing a hat, if so, apply ridiculous pain
-                (pawn == null || pawn.Dead || (CachedHat = true)) ? 0.0f : 5.0f
+                (pawn == null || pawn.Dead || (CachedHat == true)) ? 0.0f : 5.0f
 
         );
     }
