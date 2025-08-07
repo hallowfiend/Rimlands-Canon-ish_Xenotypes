@@ -7,13 +7,17 @@
 		<hediffClass>RMLNDS_CanonishXenotypes.Hediff_MalformedHead</hediffClass>
 		<initialSeverity>1</initialSeverity>
 		<everCurableByItem>false</everCurableByItem>
+		<makesAlert>false</makesAlert>
 	</HediffDef>
 	<HediffDef>
 		<defName>RMLNDSCanonXeno_PainStrength</defName>
 		<label>painstrength</label>
 		<description>A measure of how much this pawn's pain-receptive adrenal glands are producing.</description>
 		<hediffClass>RMLNDS_CanonishXenotypes.Hediff_PainStrength</hediffClass>
-		<visible>false</visible>
+		<makesAlert>false</makesAlert>
+		<everCurableByItem>false</everCurableByItem>
+		<defaultLabelColor>Color.red</defaultLabelColor>
+		<isBad>false</isBad>
 		<stages>
 			<li>
 				<label>PLACEHOLDER - REPORT ON GITHUB IF YOU SEE THIS</label>
