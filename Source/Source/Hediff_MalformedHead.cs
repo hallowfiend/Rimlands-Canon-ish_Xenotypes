@@ -13,7 +13,7 @@ namespace RMLNDS_CanonishXenotypes
         public bool CachedHat;
         public void NotifyApparelChanged(Apparel wornApparel)
         {
-            CachedHat = pawn.apparel.BodyPartGroupIsCovered(BodyPartGroupDefOf.FullHead)
+            CachedHat = pawn.apparel.BodyPartGroupIsCovered(BodyPartGroupDefOf.FullHead);
             return;
         }
         public override float PainOffset =>
