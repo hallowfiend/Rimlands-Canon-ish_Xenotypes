@@ -10,7 +10,7 @@ namespace RMLNDS_CanonishXenotypes
     
         public override bool Visible => false;
         public bool IsLethal => false;
-        public bool CachedHat = false;
+        public bool CachedHat;
         public bool NotifyApparelChanged(Apparel wornApparel)
         {
             return CachedHat = pawn.apparel.BodyPartGroupIsCovered(BodyPartGroupDefOf.FullHead);
