@@ -15,6 +15,11 @@
 		<hediffClass>RMLNDS_CanonishXenotypes.Hediff_PainStrength</hediffClass>
 		<stages>
 			<li>
+				<label>PLACEHOLDER - REPORT ON GITHUB IF YOU SEE THIS</label>
+				<minSeverity>1.0</minSeverity>
+				<Visible>false</Visible>
+			</li>
+			<li>
 				<label>fuming</label>
 				<minSeverity>1.1</minSeverity>
 				<statOffsets>
