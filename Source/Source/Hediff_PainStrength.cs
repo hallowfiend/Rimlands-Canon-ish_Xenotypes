@@ -10,11 +10,10 @@ namespace RMLNDS_CanonishXenotypes
         public bool causesNoPain => true;
         public override float Severity
         {
-            set
+            get
             {
-                this.Severity = (this.pawn.health.hediffSet.PainTotal + 1);
+                return (this.pawn.health.hediffSet.PainTotal + 1);
             }
-            get => this.Severity;
         }
     }
 }

@@ -15,22 +15,20 @@ namespace RMLNDS_CanonishXenotypes
         {
             return CachedHat = pawn.apparel.BodyPartGroupIsCovered(BodyPartGroupDefOf.FullHead);
         }      
-        public override float PainOffset => HatChecker;
-        public float HatChecker
+        public override float PainOffset
         {
-            set
+            get
             {
                 // Check if pawn doesn't exist or is dead
                 if (pawn == null || pawn.Dead || (CachedHat = true))
                 {
-                    HatChecker = 0.0f;
+                    return 0.0f;
                 }
                 else
                 {
-                    HatChecker = 5.0f;
+                    return 5.0f;
                 }
             }
-            get => HatChecker;
 
         }
     }
