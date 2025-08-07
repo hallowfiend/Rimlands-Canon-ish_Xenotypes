@@ -8,6 +8,5 @@
 	<requiredGenes>
 		<li>RMLNDSCanonXeno_HelmetDependency</li>
 	</requiredGenes>
-	<eyeOffsetEastWest>(0.15, 0, 0.175)</eyeOffsetEastWest>
 	</HeadTypeDef>
 </Defs>
