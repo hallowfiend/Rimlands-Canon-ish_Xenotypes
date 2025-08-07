@@ -8,12 +8,6 @@ namespace RMLNDS_CanonishXenotypes
         public bool IsLethal => false;
         public bool EverCurableByItem => false;
         public bool causesNoPain => true;
-        public override float Severity
-        {
-            get
-            {
-                return (this.pawn.health.hediffSet.PainTotal + 1);
-            }
-        }
+        public override float Severity => (this.pawn.health.hediffSet.PainTotal + 1);
     }
 }
