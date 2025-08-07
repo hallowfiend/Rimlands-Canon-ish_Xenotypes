@@ -54,7 +54,7 @@
     <Compile Include="Source\Gene_PainStrength.cs" />
     <Compile Include="Source\Hediff_PainStrength.cs" />
     <Compile Include="Source\RMLNDS_CanonishXenos_DefOf.cs" />
-    <Compile Include="Source\Hediff_MalfromedHead.cs" />
+    <Compile Include="Source\Hediff_MalformedHead.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
