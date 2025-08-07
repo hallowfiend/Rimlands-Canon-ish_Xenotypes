@@ -21,20 +21,20 @@
 		<stages>
 			<li>
 				<label>PLACEHOLDER - REPORT ON GITHUB IF YOU SEE THIS</label>
-				<minSeverity>1.0</minSeverity>
+				<minSeverity>0.0</minSeverity>
 			</li>
 			<li>
 				<label>fuming</label>
-				<minSeverity>1.1</minSeverity>
+				<minSeverity>0.1</minSeverity>
 				<statOffsets>
 					<MeleeWeapon_DamageMultiplier>1.1</MeleeWeapon_DamageMultiplier>
-					<IncomingDamageFactor>0.99</IncomingDamageFactor>
+					<IncomingDamageFactor>0.95</IncomingDamageFactor>
 				</statOffsets>
 				<becomeVisible>true</becomeVisible>
 			</li>
 			<li>
 				<label>smouldering</label>
-				<minSeverity>1.15</minSeverity>
+				<minSeverity>0.2</minSeverity>
 				<statOffsets>
 					<MeleeWeapon_DamageMultiplier>1.2</MeleeWeapon_DamageMultiplier>
 					<IncomingDamageFactor>0.85</IncomingDamageFactor>
@@ -42,7 +42,7 @@
 			</li>
 			<li>
 				<label>burning</label>
-				<minSeverity>1.4</minSeverity>
+				<minSeverity>0.4</minSeverity>
 				<statOffsets>
 					<MeleeWeapon_DamageMultiplier>1.5</MeleeWeapon_DamageMultiplier>
 					<IncomingDamageFactor>0.75</IncomingDamageFactor>
@@ -50,7 +50,7 @@
 			</li>
 			<li>
 				<label>scorching</label>
-				<minSeverity>1.8</minSeverity>
+				<minSeverity>0.7</minSeverity>
 				<statOffsets>
 					<MeleeWeapon_DamageMultiplier>1.75</MeleeWeapon_DamageMultiplier>
 					<IncomingDamageFactor>0.65</IncomingDamageFactor>
@@ -59,7 +59,7 @@
 			</li>
 			<li>
 				<label>blazing</label>
-				<minSeverity>2.0</minSeverity>
+				<minSeverity>1.0</minSeverity>
 				<statOffsets>
 					<MeleeWeapon_DamageMultiplier>2.0</MeleeWeapon_DamageMultiplier>
 					<IncomingDamageFactor>0.50</IncomingDamageFactor>
