@@ -7,20 +7,33 @@ namespace RMLNDS_CanonishXenotypes
 {
     public class Hediff_MalformedHead : HediffWithComps
     {
-    
         public override bool Visible => false;
         public bool IsLethal => false;
         public bool CachedHat;
-        public void NotifyApparelChanged(Apparel wornApparel)
+
+        // Initialize CachedHat when hediff is added
+        public override void PostAdd(DamageInfo? dinfo)
+        {
+            base.PostAdd(dinfo);
+            UpdateHelmetStatus();
+        }
+
+        // Update helmet status whenever apparel changes
+        private void UpdateHelmetStatus()
         {
             CachedHat = pawn.apparel.BodyPartGroupIsCovered(BodyPartGroupDefOf.FullHead);
-            return;
         }
-        public override float PainOffset =>
-        (
-                // Check if pawn doesn't exist or is dead or is wearing a hat, if not so, apply max pain
-                (pawn == null || pawn.Dead || (CachedHat == false)) ? 0.0f : 1.0f
 
-        );
+        public override void Notify_PawnPostApplyDamage(DamageInfo dinfo, float totalDamageDealt)
+        {
+            base.Notify_PawnPostApplyDamage(dinfo, totalDamageDealt);
+            UpdateHelmetStatus();
+        }
+
+        // Return pain value:
+        // Returns 1.0 (max pain) when pawn exists, is alive, and has NO helmet
+        // Returns 0.0 (no pain) when pawn is null, dead, or wearing a helmet
+        public override float PainOffset =>
+            (pawn != null && !pawn.Dead && !CachedHat) ? 1.0f : 0.0f;
     }
 }
